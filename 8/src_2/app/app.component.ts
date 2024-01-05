@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  public ChildMsg : any;
+  title = 'Demo';
+  public Message : any;
+  public MsgToChild : any = "Hello child 👋";
 }

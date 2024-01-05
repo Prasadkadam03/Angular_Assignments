@@ -1,4 +1,6 @@
-<app-child (Sender) = "ChildMsg = $event" ></app-child>
 
-<h1>Message from child component : {{ChildMsg}}</h1>
+<input [(ngModel)] = "str" type="text" >
+
+<h1> Length of string - {{str}} - <br>is {{str.length}} </h1>
+
 <router-outlet></router-outlet>

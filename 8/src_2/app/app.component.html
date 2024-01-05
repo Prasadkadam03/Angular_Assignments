@@ -1,4 +1,14 @@
-<app-child (Sender) = "ChildMsg = $event" ></app-child>
+<h1> Parent component </h1>
+<h1>
+    Message to child is : {{MsgToChild}}
+</h1>
 
-<h1>Message from child component : {{ChildMsg}}</h1>
+<app-demo [Reciever] = "MsgToChild"></app-demo>
+<br>
+<br>
+<app-demo  (Sender) = "Message = $event">  </app-demo>
+
+<h1>------------</h1>
+<h1> Message from child is : {{Message}} </h1>
+
 <router-outlet></router-outlet>

@@ -1,0 +1,9 @@
+<h2>Inside child component : Demo</h2>
+
+<h3 style="color: red;"> Enter the data u want to send to parent : </h3>
+
+<input style="color: blue;" [(ngModel)]="Msg" type="text">
+<button (click) = "SendMessage(Msg)">Send message</button>
+
+
+<h6> Your Message is : {{Msg}} </h6>
